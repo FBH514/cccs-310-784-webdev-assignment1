@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  border: rgb(226, 179, 138) 0.5rem solid;
+  background-color: rgb(226, 161, 111);
+  font-family: "Arial", sans-serif;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1015px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  width: 100%;
+}
+
+.menu {
+  padding: 1rem;
+  background-color: white;
+}
+.menu nav {
+  width: 12rem;
+}
+.menu nav ul {
+  padding-left: 0;
+  list-style: none;
+}
+.menu nav ul li {
+  margin-bottom: 0.5rem;
+}
+.menu nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.links-info-schedule {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.info {
+  background-color: white;
+  padding: 1rem 2rem;
+}
+.info h1 {
+  color: white;
+  font-size: 2.5rem;
+  background-color: rgb(209, 133, 74);
+}
+.info h3 {
+  color: white;
+  font-size: 1.5em;
+  background-color: rgb(209, 133, 74);
+}
+
+.course-outline .week {
+  list-style: upper-roman;
+}
+.course-outline .week ol {
+  list-style: upper-latin;
+}
+.course-outline .week ol ol {
+  list-style: decimal;
+}
+
+footer {
+  background-color: rgb(209, 133, 74);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=run.css.map */
