@@ -1,0 +1,92 @@
+
+body {
+    margin: 0;
+    border: rgb(226, 179, 138) 0.5rem solid;
+    background-color: rgb(235, 178, 132);
+    font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
+    width: 100%;
+  }
+
+  .container{
+    margin: 0 auto;
+    padding: 0 1 rem;
+    max-width: 80%;
+    min-width:640px;
+    width: 80%;
+  }
+
+  .logo{
+    width: 100%;
+    min-height:91px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(255, 255, 240);
+  }
+
+  nav {
+    width: 12rem;
+    padding: 1rem;
+    background-color: rgb(255, 255, 240);
+  }
+
+  menu {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  menu li {
+    margin-bottom: 0.5rem;
+  }
+  
+  menu li a {
+    text-decoration: none;
+    color: #4040409e;
+  }
+
+  .info {
+    background-color: rgb(255, 255, 240);
+    padding: 1rem 2rem;
+  }
+
+  .info h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: normal;
+    background-color: rgb(185, 122, 87);
+  }
+
+  .info h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: normal;
+    background-color: rgb(185, 122, 87);
+  }
+
+  .course-outline .week {
+    list-style: upper-roman;
+  }
+
+  .course-outline .week ol {
+    list-style: upper-latin;
+  }
+
+  .course-outline .week ol ol {
+    list-style: decimal;
+  }
+
+  footer {
+    background-color: rgb(222, 128, 60);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer address {
+    color: rgb(255, 255, 240);
+    font-style: normal;
+    text-align: center;
+  }
