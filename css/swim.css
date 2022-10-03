@@ -10,11 +10,13 @@ body {
     margin: 0 auto;
     padding: 0 1 rem;
     max-width: 80%;
+    min-width:640px;
     width: 80%;
   }
   
   .logo{
     width: 100%;
+    min-height:91px;
   }
 
   main {
