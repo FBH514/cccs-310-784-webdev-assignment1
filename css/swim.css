@@ -50,16 +50,13 @@ main {
   padding: 0 5% 0 2rem;
 }
 
-.info {
-  background-color: rgb(255, 255, 240);
-}
-.info h1 {
+main h1 {
   color: white;
   font-size: 2rem;
   font-weight: normal;
   background-color: rgb(185, 122, 87);
 }
-.info h3 {
+main h3 {
   color: white;
   font-size: 1.5rem;
   font-weight: normal;
