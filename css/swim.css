@@ -76,6 +76,10 @@ main {
   list-style: decimal;
 }
 
+.li-none{
+  list-style-type: none;
+}
+
 footer {
   background-color: rgb(222, 128, 60);
   grid-row: 3/span 1;
