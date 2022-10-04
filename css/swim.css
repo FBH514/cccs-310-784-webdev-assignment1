@@ -1,94 +1,94 @@
 body, html {
-    height: 100%;
-    margin: 0;
-    background-color: rgb(235, 178, 132);
-    justify-content: center;
-    font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
-  }
+  height: 100%;
+  margin: 0;
+  background-color: rgb(235, 178, 132);
+  justify-content: center;
+  font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
+}
 
-  .container{
-    display: grid;
-    grid-template-rows: .5fr 6fr .5fr;
-    grid-template-columns: 1fr 5fr;
-    justify-content: center;
-    background-color: rgb(235, 178, 132);
-    padding: 0% 8% 1%;
-  }
+.container{
+  display: grid;
+  grid-template-rows: .5fr 6fr .5fr;
+  grid-template-columns: 1fr 5fr;
+  justify-content: center;
+  background-color: rgb(235, 178, 132);
+  padding: 0% 8% 1%;
+}
 
-  header{
-    grid-row: 1/span 1;
-    grid-column: 1/span 2;
-  }
+header{
+  grid-row: 1/span 1;
+  grid-column: 1/span 2;
+}
 
-  .logo{
-    width: 100%;
-    height: 100%;
-  }
+.logo{
+  width: 100%;
+  height: 100%;
+  min-height: 91px;
+}
 
-  nav {
-    grid-row: 2/span 1;
-    grid-column: 1/span 1;
-    background-color: rgb(255, 255, 240);
-  }
+nav {
+  grid-row: 2/span 1;
+  grid-column: 1/span 1;
+  background-color: rgb(255, 255, 240);
+}
 
-  menu {
-    list-style: none;
-  }
+menu {
+  list-style: none;
+}
 
-  menu li {
-    margin-bottom: 0.5rem;
-  }
-  menu li a {
-    text-decoration: none;
-    color: #000;
-  }
+menu li {
+  margin-bottom: 0.5rem;
+}
+menu li a {
+  text-decoration: none;
+  color: #000;
+}
 
-  main {
-    grid-row: 2/span 1;
-    grid-column: 2/span 1;
-    background-color:rgb(255, 255, 240);
-    padding: 0 5% 0 2rem;
-  }
+main {
+  grid-row: 2/span 1;
+  grid-column: 2/span 1;
+  background-color:rgb(255, 255, 240);
+  padding: 0 5% 0 2rem;
+}
 
-  .info {
-    background-color: rgb(255, 255, 240);
-  }
-  .info h1 {
-    color: white;
-    font-size: 2rem;
-    font-weight: normal;
-    background-color: rgb(185, 122, 87);
-  }
-  .info h3 {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: normal;
-    background-color: rgb(185, 122, 87);
-  }
-  
-  .course-outline .week {
-    list-style: upper-roman;
-  }
-  .course-outline .week ol {
-    list-style: upper-latin;
-  }
-  .course-outline .week ol ol {
-    list-style: decimal;
-  }
-  
-  footer {
-    background-color: rgb(222, 128, 60);
-    grid-row: 3/span 1;
-    grid-column: 1/span 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-  }
+.info {
+  background-color: rgb(255, 255, 240);
+}
+.info h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: normal;
+  background-color: rgb(185, 122, 87);
+}
+.info h3 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: normal;
+  background-color: rgb(185, 122, 87);
+}
 
-  footer address {
-    color: rgb(255, 255, 240);
-    font-style: normal;
-    text-align: center;
-  }
-  
+.course-outline .week {
+  list-style: upper-roman;
+}
+.course-outline .week ol {
+  list-style: upper-latin;
+}
+.course-outline .week ol ol {
+  list-style: decimal;
+}
+
+footer {
+  background-color: rgb(222, 128, 60);
+  grid-row: 3/span 1;
+  grid-column: 1/span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+footer address {
+  color: rgb(255, 255, 240);
+  font-style: normal;
+  text-align: center;
+}
