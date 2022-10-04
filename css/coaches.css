@@ -20,7 +20,7 @@ header{
     grid-column: 1/span 2;
 }
 
-.logo{
+.logo {
     width: 100%;
     height: 100%;
 }
@@ -52,20 +52,44 @@ main {
     padding: 0 5% 0 2rem;
 }
 
-main h1 {
+main .about{
+    padding: 2vh;
+    display: block;
+}
+
+main .about .meet-our-coaches {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about .meet-our-coaches .mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .about h1 {
     color: white;
     font-size: 2rem;
     font-weight: normal;
     background-color: rgb(185, 122, 87);
 }
 
-main .about{
-    padding: 1vw;
+main .about blockquote {
+    background-color: #E18330;
+    color: white;
+    float: right;
+    padding: 2vh;
+}
+
+.content {
+    float: right;
 }
 
 main .coaches {
     color: #E18330;
-    padding: 1vw;
+    padding: 2vh;
 }
 
 main .coaches ul {
@@ -81,7 +105,9 @@ main .coaches ul li:before {
 
 main p {
     color: #4040409e;
-    font-size: 2.5vh
+    font-size: 2.5vh;
+    margin: 0;
+    padding: 1vh;
 }
 
 main .coach-images {
