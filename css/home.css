@@ -1,91 +1,118 @@
-body {
+body, html {
+  height: 100%;
   margin: 0;
+  background-color: rgb(235, 178, 132);
+  justify-content: center;
+  font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
+  color: rgb(91, 91, 91);
+  /* margin: 0;
   border: rgb(226, 179, 138) 0.5rem solid;
   background-color: rgb(226, 161, 111);
   font-family: "Arial", sans-serif;
-  width: 100%;
+  width: 100%; */
 }
 
 .container {
-  width: 100%;
+  display: grid;
+  grid-template-rows: .7fr 6fr .3fr;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-content: center;
+  background-color: rgb(235, 178, 132);
+  padding: 0% 8% 1%;
+  /* width: 100%;
   max-width: 1015px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1rem; */
 }
 
-.links-content-comments {
+/* main {
   display: flex;
   flex-direction: row;
-}
+} */
 
 header {
-  width: 100%;
+  /* width: 100%; */
+  grid-row: 1/span 1;
+  grid-column: 1/span 3;
 }
 
-.menu {
-  padding: 1rem;
-  background-color: white;
+.logo{
+  width: 100%;
+  height: 100%;
+  min-height: 91px;
 }
-.menu nav {
-  width: 12rem;
+
+nav {
+  grid-row: 2/span 1;
+  grid-column: 1/span 1;
+  background-color: rgb(255, 255, 240);
 }
-.menu nav ul {
-  padding-left: 0;
+
+nav li {
   list-style: none;
-}
-.menu nav ul li {
   margin-bottom: 0.5rem;
 }
-.menu nav ul li a {
+nav li a {
   text-decoration: none;
-  color: #000;
+  color: #4040409e;
 }
 
-.main {
-  background-color: white;
+main {
+  grid-row: 2/span 1;
+  grid-column: 2/span 1;
+  background-color:rgb(255, 255, 240);
+  padding: 0 5% 0 2rem;
 }
-.main section {
+
+main article {
   display: inline-block;
 }
-.main section h2 {
+main article h1 {
   color: white;
-  font-size: 2.5rem;
-  background-color: rgb(209, 133, 74);
+  font-size: 2rem;
+  font-weight: normal;
+  background-color: rgb(185, 122, 87);
 }
-.main section img {
+main article img:not(.icon) {
   float: right;
   margin-left: 1rem;
   max-width: 100%;
   max-height: 100%;
 }
-.main article h3 {
-  font-size: 1.5rem;
+main article h2 {
   color: white;
-  background-color: rgb(226, 179, 138);
+  font-size: 1.5rem;
+  font-weight: normal;
+  background-color: rgb(235, 178, 132);
 }
-.main article p {
+
+main article p {
   text-align: left;
   justify-content: center;
 }
 
 .comments {
-  background-color: white;
+  grid-row: 2/span 1;
+  grid-column: 3/span 1;
+  background-color:rgb(255, 255, 240);
   padding: 1rem;
 }
-.comments article q {
-  color: rgb(226, 179, 138);
+.comments q {
+  color: rgb(235, 178, 132);
 }
 
 footer {
-  background-color: rgb(209, 133, 74);
-  height: 3rem;
+  background-color: rgb(222, 128, 60);
+  grid-row: 3/span 1;
+  grid-column: 1/span 3;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-footer p {
-  color: white;
-  text-align: center;
+  padding: 1rem;
 }
 
-/*# sourceMappingURL=home.css.map */
+footer address {
+  color: rgb(255, 255, 240);
+  font-style: normal;
+  text-align: center;
+}
