@@ -63,6 +63,7 @@ main h3 {
   background-color: rgb(185, 122, 87);
 }
 
+
 .course-outline .week {
   list-style: upper-roman;
 }
@@ -73,9 +74,13 @@ main h3 {
   list-style: decimal;
 }
 
-.li-none{
+
+/* TODO: fix this */
+li.skip{
   list-style-type: none;
+  counter-increment: none;
 }
+
 
 footer {
   background-color: rgb(222, 128, 60);
