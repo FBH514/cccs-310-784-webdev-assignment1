@@ -3,13 +3,13 @@ body, html {
     margin: 0;
     background-color: rgb(235, 178, 132);
     justify-content: center;
-    font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
+    font-family: 'Quicksand','Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
     color: rgb(91, 91, 91);
 }
 
 .container{
     display: grid;
-    grid-template-rows: 1fr 10fr .3fr;
+    grid-template-rows: max(91px, 1fr) 3fr 1rem;
     grid-template-columns: 1fr 4fr;
     justify-content: center;
     background-color: rgb(235, 178, 132);
@@ -63,7 +63,7 @@ main h1 {
     background-color: rgb(185, 122, 87);
     display: inline;
     padding: 0 1rem;
-    font-stretch: expanded;
+    font-weight: bolder;
 }
 
 main .about blockquote {
@@ -71,9 +71,23 @@ main .about blockquote {
     color: rgb(255, 255, 240);
     align-self: flex-start;
     padding: 2vh;
-    font-style: italic;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-weight: normal;
+    font-style: italic;
     display: inline-block;
+}
+
+blockquote:before { 
+    font-family: 'Quicksand','Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
+    content: open-quote;
+    font-weight: 400;
+    font-size:2rem;
+} 
+blockquote:after { 
+    font-family: 'Quicksand','Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
+    content: close-quote;
+    font-weight: 400;
+    font-size:2rem;
 }
 
 main .coaches{
@@ -82,7 +96,7 @@ main .coaches{
 
 main .coaches h2 {
     color: #E18330;
-    font-weight: normal;
+    font-weight: 600;
 }
 
 main .coaches ul {
@@ -97,7 +111,6 @@ main .coaches ul li:before {
 
 main p {
     margin: 0;
-    padding: 1vh;
 }
 
 main .coach-images {
@@ -105,6 +118,10 @@ main .coach-images {
     max-height: 100%;
     max-width: 100%;
     float: left;
+}
+
+h1, h2 {
+    letter-spacing: 0.15em;
 }
 
 footer {
