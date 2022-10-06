@@ -4,15 +4,16 @@ body, html {
     background-color: rgb(235, 178, 132);
     justify-content: center;
     font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
+    color: rgb(91, 91, 91);
 }
 
 .container{
     display: grid;
-    grid-template-rows: .5fr 6fr .5fr;
-    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 10fr .3fr;
+    grid-template-columns: 1fr 4fr;
     justify-content: center;
     background-color: rgb(235, 178, 132);
-    padding: 0% 8% 1%;
+    padding: 0% 12% 1%;
 }
 
 header{
@@ -31,70 +32,61 @@ nav {
     background-color: rgb(255, 255, 240);
 }
 
-menu {
+nav li {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-menu li {
     margin-bottom: 0.5rem;
 }
-menu li a {
+nav li a {
     text-decoration: none;
     color: #4040409e;
 }
+
+.break{
+    margin-bottom: 2rem;
+  }
 
 main {
     grid-row: 2/span 1;
     grid-column: 2/span 1;
     background-color:rgb(255, 255, 240);
-    padding: 0 5% 0 2rem;
+    padding: 1vh 5% 2vh;
 }
 
-main .about{
-    padding: 2vh;
-    display: block;
-}
-
-main .about .meet-our-coaches {
+main .about {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
-.about .meet-our-coaches .mission {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-main .about h1 {
-    color: white;
-    font-size: 2rem;
+main h1 {
+    color: rgb(248, 214, 185);
+    font-size: 2.5rem;
     font-weight: normal;
     background-color: rgb(185, 122, 87);
+    display: inline;
+    padding: 0 1rem;
+    font-stretch: expanded;
 }
 
 main .about blockquote {
     background-color: #E18330;
-    color: white;
-    float: right;
+    color: rgb(255, 255, 240);
+    align-self: flex-start;
     padding: 2vh;
+    font-style: italic;
+    font-weight: normal;
+    display: inline-block;
 }
 
-.content {
+main .coaches{
     float: right;
 }
 
-main .coaches {
+main .coaches h2 {
     color: #E18330;
-    padding: 2vh;
+    font-weight: normal;
 }
 
 main .coaches ul {
     list-style-type: none;
-    color: #4040409e;
     padding: 0;
 }
 
@@ -104,8 +96,6 @@ main .coaches ul li:before {
 }
 
 main p {
-    color: #4040409e;
-    font-size: 2.5vh;
     margin: 0;
     padding: 1vh;
 }
@@ -120,16 +110,15 @@ main .coach-images {
 footer {
     background-color: rgb(222, 128, 60);
     grid-row: 3/span 1;
-    grid-column: 1/span 2;
-    height: 5vh;
+    grid-column: 1/span 3;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1rem;
-}
-
-footer address {
+  }
+  
+  footer address {
     color: rgb(255, 255, 240);
     font-style: normal;
     text-align: center;
-}
+  }
