@@ -66,24 +66,23 @@ main h1 {
     font-weight: bolder;
 }
 
-main .about blockquote {
+main .about q {
     background-color: #E18330;
     color: rgb(255, 255, 240);
     align-self: flex-start;
     padding: 2vh;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-weight: normal;
+    font-weight: light;
     font-style: italic;
-    display: inline-block;
 }
 
-blockquote:before { 
+q:before { 
     font-family: 'Quicksand','Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
     content: open-quote;
     font-weight: 400;
     font-size:2rem;
 } 
-blockquote:after { 
+q:after { 
     font-family: 'Quicksand','Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
     content: close-quote;
     font-weight: 400;
