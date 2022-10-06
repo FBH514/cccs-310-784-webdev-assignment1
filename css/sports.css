@@ -93,5 +93,9 @@ footer {
 footer address {
   color: rgb(255, 255, 240);
   font-style: normal;
-  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(255, 255, 240);
 }

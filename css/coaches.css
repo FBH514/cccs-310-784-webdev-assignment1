@@ -71,9 +71,9 @@ main .about q {
     color: rgb(255, 255, 240);
     align-self: flex-start;
     padding: 2vh;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-weight: light;
-    font-style: italic;
+    margin-left: 5vh;
+    display:inline-block;
 }
 
 q:before { 
@@ -136,5 +136,8 @@ footer {
   footer address {
     color: rgb(255, 255, 240);
     font-style: normal;
-    text-align: center;
+  }
+  footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 240);
   }
